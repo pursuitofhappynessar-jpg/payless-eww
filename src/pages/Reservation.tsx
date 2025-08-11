@@ -222,7 +222,7 @@ const Reservation: React.FC = () => {
           {/* Header */}
           <div className="text-center mb-12">
             <div className="flex justify-center mb-6">
-              <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-4 rounded-full">
+              <div className="bg-gradient-to-r from-payless-blue to-payless-navy p-4 rounded-full">
                 <Calendar className="w-12 h-12 text-white" />
               </div>
             </div>
@@ -235,7 +235,7 @@ const Reservation: React.FC = () => {
           </div>
 
           {/* Member Benefits */}
-          <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-6 mb-8 text-white">
+          <div className="bg-gradient-to-r from-payless-blue to-payless-navy rounded-2xl p-6 mb-8 text-white">
             <h2 className="text-xl font-bold mb-4 text-center">🎉 Exclusive Member Benefits</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
               <div>
@@ -270,7 +270,7 @@ const Reservation: React.FC = () => {
                   name="serviceType"
                   value={formData.serviceType}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-payless-blue focus:border-transparent transition-colors"
                 >
                   <option value="hotel">Hotel Booking</option>
                   <option value="flight">Flight Booking</option>
@@ -470,7 +470,7 @@ const Reservation: React.FC = () => {
                     name="guests"
                     value={formData.guests}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-payless-blue focus:border-transparent transition-colors"
                   >
                     {[1,2,3,4,5,6,7,8].map(num => (
                       <option key={num} value={num.toString()}>{num} Guest{num > 1 ? 's' : ''}</option>
@@ -493,7 +493,7 @@ const Reservation: React.FC = () => {
               {/* Submit Button */}
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold py-4 px-6 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+                className="w-full bg-gradient-to-r from-payless-blue to-payless-navy hover:from-payless-navy hover:to-payless-dark-navy text-white font-bold py-4 px-6 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
               >
                 Confirm Reservation
               </button>
@@ -504,7 +504,7 @@ const Reservation: React.FC = () => {
           <div className="mt-8 text-center">
             <p className="text-gray-600 leading-relaxed">
               Don't have a Payless Card yet?{' '}
-              <a href="/get-your-card" className="text-blue-600 hover:text-blue-800 font-semibold">
+              <a href="/get-your-card" className="text-payless-blue hover:text-payless-navy font-semibold">
                 Get your card now
               </a>{' '}
               and start saving on your travels!

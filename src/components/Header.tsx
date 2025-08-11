@@ -25,7 +25,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="bg-white/95 backdrop-blur-sm border-b border-gray-100 sticky top-0 z-50">
+    <header className="bg-white/95 backdrop-blur-sm border-b border-payless-light-blue sticky top-0 z-50 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo with enhanced visibility */}
@@ -49,8 +49,8 @@ const Header: React.FC = () => {
                   onClick={() => handleNavClick(item.href)}
                   className={`text-sm font-medium transition-colors duration-200 ${
                     location.pathname === '/' && location.hash === item.href.substring(1)
-                      ? 'text-sky-600'
-                      : 'text-gray-700 hover:text-sky-600'
+                      ? 'text-payless-navy'
+                      : 'text-gray-700 hover:text-payless-blue'
                   }`}
                 >
                   {item.name}
@@ -61,8 +61,8 @@ const Header: React.FC = () => {
                   to={item.href}
                   className={`text-sm font-medium transition-colors duration-200 ${
                     location.pathname === item.href
-                      ? 'text-sky-600'
-                      : 'text-gray-700 hover:text-sky-600'
+                      ? 'text-payless-navy'
+                      : 'text-gray-700 hover:text-payless-blue'
                   }`}
                 >
                   {item.name}
@@ -71,9 +71,12 @@ const Header: React.FC = () => {
             ))}
             <Link
               to="/get-your-card"
-              className="bg-gradient-to-r from-sky-500 to-blue-600 text-white px-6 py-2 rounded-lg hover:from-sky-600 hover:to-blue-700 transition-all duration-200 font-medium shadow-lg hover:shadow-xl transform hover:scale-105 animate-glow"
+              className="bg-gradient-to-r from-payless-blue to-payless-navy text-white px-6 py-2 rounded-lg hover:from-payless-navy hover:to-payless-dark-navy transition-all duration-200 font-medium shadow-lg hover:shadow-xl transform hover:scale-105 relative overflow-hidden"
             >
+              <span className="absolute inset-0 bg-gradient-to-r from-payless-orange/20 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></span>
+              <span className="relative">
               Get Your Card
+              </span>
             </Link>
           </nav>
 
@@ -88,7 +91,7 @@ const Header: React.FC = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-gray-100">
+          <div className="md:hidden py-4 border-t border-payless-light-blue">
             <div className="flex flex-col space-y-3">
               {navigation.map((item) => (
                 item.href.startsWith('/#') ? (
@@ -97,8 +100,8 @@ const Header: React.FC = () => {
                     onClick={() => handleNavClick(item.href)}
                     className={`text-sm font-medium py-2 px-3 rounded-lg transition-colors duration-200 text-left ${
                       location.pathname === '/' && location.hash === item.href.substring(1)
-                        ? 'text-sky-600 bg-sky-50'
-                        : 'text-gray-700 hover:text-sky-600 hover:bg-gray-50'
+                        ? 'text-payless-navy bg-payless-light-blue'
+                        : 'text-gray-700 hover:text-payless-blue hover:bg-gray-50'
                     }`}
                   >
                     {item.name}
@@ -110,8 +113,8 @@ const Header: React.FC = () => {
                     onClick={() => setIsMenuOpen(false)}
                     className={`text-sm font-medium py-2 px-3 rounded-lg transition-colors duration-200 ${
                       location.pathname === item.href
-                        ? 'text-sky-600 bg-sky-50'
-                        : 'text-gray-700 hover:text-sky-600 hover:bg-gray-50'
+                        ? 'text-payless-navy bg-payless-light-blue'
+                        : 'text-gray-700 hover:text-payless-blue hover:bg-gray-50'
                     }`}
                   >
                     {item.name}
@@ -121,7 +124,7 @@ const Header: React.FC = () => {
               <Link
                 to="/get-your-card"
                 onClick={() => setIsMenuOpen(false)}
-                className="bg-gradient-to-r from-sky-500 to-blue-600 text-white px-6 py-3 rounded-lg hover:from-sky-600 hover:to-blue-700 transition-all duration-200 font-medium text-center"
+                className="bg-gradient-to-r from-payless-blue to-payless-navy text-white px-6 py-3 rounded-lg hover:from-payless-navy hover:to-payless-dark-navy transition-all duration-200 font-medium text-center"
               >
                 Get Your Card
               </Link>

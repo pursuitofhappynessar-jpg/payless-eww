@@ -170,7 +170,7 @@ const GetYourCard: React.FC = () => {
           {/* Header */}
           <div className="text-center mb-12">
             <div className="flex justify-center mb-6">
-              <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-4 rounded-full">
+              <div className="bg-gradient-to-r from-payless-blue to-payless-navy p-4 rounded-full">
                 <CreditCard className="w-12 h-12 text-white" />
               </div>
             </div>
@@ -189,29 +189,29 @@ const GetYourCard: React.FC = () => {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               <div className="text-center">
-                <div className="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
-                  <span className="text-blue-600 font-bold">20%</span>
+                <div className="bg-payless-light-blue w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <span className="text-payless-blue font-bold">20%</span>
                 </div>
                 <h3 className="font-semibold text-gray-900 mb-1">Save Up To 20%</h3>
                 <p className="text-sm text-gray-600">On all bookings</p>
               </div>
               <div className="text-center">
-                <div className="bg-green-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
-                  <span className="text-green-600 font-bold">500+</span>
+                <div className="bg-payless-orange-light w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <span className="text-payless-orange font-bold">500+</span>
                 </div>
                 <h3 className="font-semibold text-gray-900 mb-1">Partner Hotels</h3>
                 <p className="text-sm text-gray-600">Across Egypt</p>
               </div>
               <div className="text-center">
-                <div className="bg-purple-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
-                  <span className="text-purple-600 font-bold">24/7</span>
+                <div className="bg-payless-light-blue w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <span className="text-payless-navy font-bold">24/7</span>
                 </div>
                 <h3 className="font-semibold text-gray-900 mb-1">Customer Support</h3>
                 <p className="text-sm text-gray-600">Always available</p>
               </div>
               <div className="text-center">
-                <div className="bg-orange-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
-                  <span className="text-orange-600 font-bold">FREE</span>
+                <div className="bg-payless-orange-light w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <span className="text-payless-orange font-bold">FREE</span>
                 </div>
                 <h3 className="font-semibold text-gray-900 mb-1">No Annual Fee</h3>
                 <p className="text-sm text-gray-600">Lifetime membership</p>
@@ -342,7 +342,7 @@ const GetYourCard: React.FC = () => {
               {/* Submit Button */}
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold py-4 px-6 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+                className="w-full bg-gradient-to-r from-payless-blue to-payless-navy hover:from-payless-navy hover:to-payless-dark-navy text-white font-bold py-4 px-6 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
               >
                 Submit Application
               </button>
@@ -353,7 +353,7 @@ const GetYourCard: React.FC = () => {
           <div className="mt-8 text-center">
             <p className="text-gray-600 leading-relaxed">
               Already have a Payless Card?{' '}
-              <a href="/reservation" className="text-blue-600 hover:text-blue-800 font-semibold">
+              <a href="/reservation" className="text-payless-blue hover:text-payless-navy font-semibold">
                 Make a reservation
               </a>
             </p>

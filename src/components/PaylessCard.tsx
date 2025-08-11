@@ -31,7 +31,7 @@ const PaylessCard: React.FC<PaylessCardProps> = ({
       />
       {/* Enhanced Fallback Card Design */}
       <div 
-        className="w-full h-full bg-gradient-to-br from-blue-600 via-sky-500 to-blue-700 rounded-xl shadow-2xl flex flex-col justify-between p-6 text-white relative overflow-hidden hover:shadow-glow transition-all duration-300 group"
+        className="w-full h-full bg-gradient-to-br from-payless-blue via-payless-navy to-payless-dark-navy rounded-xl shadow-2xl flex flex-col justify-between p-6 text-white relative overflow-hidden hover:shadow-glow transition-all duration-300 group"
         style={{display: 'none'}}
       >
         {/* Enhanced Background Pattern */}
@@ -51,6 +51,13 @@ const PaylessCard: React.FC<PaylessCardProps> = ({
           <div className="absolute bottom-8 right-8">
             <div className="w-6 h-6 bg-white/20 rounded-full"></div>
           </div>
+          {/* Orange accent elements */}
+          <div className="absolute top-6 right-12">
+            <div className="w-2 h-2 bg-payless-orange rounded-full"></div>
+          </div>
+          <div className="absolute bottom-12 left-8">
+            <div className="w-3 h-3 bg-payless-orange/60 rounded-full"></div>
+          </div>
         </div>
         
         {/* Card Content */}
@@ -60,7 +67,7 @@ const PaylessCard: React.FC<PaylessCardProps> = ({
             <span className="text-lg font-bold tracking-wider">PAYLESS</span>
           </div>
           <p className="text-sm opacity-90 font-manrope">Travel Discount Card</p>
-          <div className="mt-2 w-12 h-1 bg-white/50 rounded-full"></div>
+          <div className="mt-2 w-12 h-1 bg-payless-orange rounded-full"></div>
         </div>
         
         <div className="relative z-10">
@@ -78,7 +85,7 @@ const PaylessCard: React.FC<PaylessCardProps> = ({
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-1">
               {[...Array(5)].map((_, i) => (
-                <Star key={i} className="h-3 w-3 fill-current text-yellow-300" />
+                <Star key={i} className="h-3 w-3 fill-current text-payless-orange" />
               ))}
             </div>
             <span className="text-xs opacity-75 font-manrope">500+ Partners</span>

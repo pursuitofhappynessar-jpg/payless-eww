@@ -53,12 +53,16 @@ const Home: React.FC = () => {
 
       <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
         {/* Hero Section */}
-        <section className="relative overflow-hidden bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-700 text-white py-20">
+        <section className="relative overflow-hidden bg-gradient-to-r from-payless-navy via-payless-blue to-payless-dark-navy text-white py-20">
           <div className="absolute inset-0 bg-black opacity-20"></div>
+          {/* Orange accent elements */}
+          <div className="absolute top-10 right-20 w-4 h-4 bg-payless-orange rounded-full opacity-60 animate-pulse"></div>
+          <div className="absolute bottom-20 left-10 w-6 h-6 bg-payless-orange/40 rounded-full animate-bounce-slow"></div>
+          <div className="absolute top-1/2 right-1/4 w-2 h-2 bg-payless-orange rounded-full opacity-80"></div>
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-                Save Big on Every Trip with <span className="text-yellow-300">Payless Card</span>
+                Save Big on Every Trip with <span className="text-payless-orange">Payless Card</span>
               </h1>
               <p className="text-xl md:text-2xl mb-8 leading-relaxed max-w-3xl mx-auto">
                 Egypt's premier travel discount card offering exclusive savings up to 20% on hotels, flights, visa services, and Umrah packages
@@ -66,7 +70,7 @@ const Home: React.FC = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
                   to="/get-your-card"
-                  className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+                  className="bg-payless-orange hover:bg-orange-600 text-white font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
                   aria-label="Apply for your Payless discount card"
                 >
                   Get Your Card Now
@@ -89,19 +93,19 @@ const Home: React.FC = () => {
             <h2 id="stats-heading" className="sr-only">Payless Card Statistics</h2>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
               <div className="p-6">
-                <div className="text-4xl font-bold text-blue-600 mb-2">50,000+</div>
+                <div className="text-4xl font-bold text-payless-blue mb-2">50,000+</div>
                 <p className="text-gray-600 leading-relaxed">Happy Customers</p>
               </div>
               <div className="p-6">
-                <div className="text-4xl font-bold text-green-600 mb-2">20%</div>
+                <div className="text-4xl font-bold text-payless-orange mb-2">20%</div>
                 <p className="text-gray-600 leading-relaxed">Average Savings</p>
               </div>
               <div className="p-6">
-                <div className="text-4xl font-bold text-purple-600 mb-2">500+</div>
+                <div className="text-4xl font-bold text-payless-navy mb-2">500+</div>
                 <p className="text-gray-600 leading-relaxed">Partner Hotels</p>
               </div>
               <div className="p-6">
-                <div className="text-4xl font-bold text-orange-600 mb-2">24/7</div>
+                <div className="text-4xl font-bold text-payless-orange mb-2">24/7</div>
                 <p className="text-gray-600 leading-relaxed">Customer Support</p>
               </div>
             </div>
@@ -109,7 +113,7 @@ const Home: React.FC = () => {
         </section>
 
         {/* Our Services Section */}
-        <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-50" aria-labelledby="services-heading">
+        <section id="services" className="py-20 bg-gradient-to-br from-payless-light-blue to-blue-50" aria-labelledby="services-heading">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 id="services-heading" className="text-4xl font-bold text-gray-900 mb-4">
@@ -122,9 +126,9 @@ const Home: React.FC = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {/* Hotels Service */}
-              <div className="group relative bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="group relative bg-white/80 backdrop-blur-glass rounded-2xl shadow-glass overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-white/20">
                 <div className="absolute top-4 left-4 z-10">
-                  <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                  <span className="bg-payless-blue text-white px-3 py-1 rounded-full text-sm font-semibold">
                     Up to 20% OFF
                   </span>
                 </div>
@@ -153,7 +157,7 @@ const Home: React.FC = () => {
                   </ul>
                   <Link
                     to="/reservation"
-                    className="inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold transition-colors"
+                    className="inline-flex items-center text-payless-blue hover:text-payless-navy font-semibold transition-colors"
                     aria-label="Book hotel with Payless card discount"
                   >
                     Book Now →
@@ -162,9 +166,9 @@ const Home: React.FC = () => {
               </div>
 
               {/* Flight Tickets Service */}
-              <div className="group relative bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="group relative bg-white/80 backdrop-blur-glass rounded-2xl shadow-glass overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-white/20">
                 <div className="absolute top-4 left-4 z-10">
-                  <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                  <span className="bg-payless-orange text-white px-3 py-1 rounded-full text-sm font-semibold">
                     Best Prices
                   </span>
                 </div>
@@ -193,7 +197,7 @@ const Home: React.FC = () => {
                   </ul>
                   <Link
                     to="/reservation"
-                    className="inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold transition-colors"
+                    className="inline-flex items-center text-payless-blue hover:text-payless-navy font-semibold transition-colors"
                     aria-label="Book flight tickets with Payless card"
                   >
                     Book Flight →
@@ -202,9 +206,9 @@ const Home: React.FC = () => {
               </div>
 
               {/* Visa Services */}
-              <div className="group relative bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="group relative bg-white/80 backdrop-blur-glass rounded-2xl shadow-glass overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-white/20">
                 <div className="absolute top-4 left-4 z-10">
-                  <span className="bg-purple-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                  <span className="bg-payless-navy text-white px-3 py-1 rounded-full text-sm font-semibold">
                     Fast Processing
                   </span>
                 </div>
@@ -233,7 +237,7 @@ const Home: React.FC = () => {
                   </ul>
                   <Link
                     to="/reservation"
-                    className="inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold transition-colors"
+                    className="inline-flex items-center text-payless-blue hover:text-payless-navy font-semibold transition-colors"
                     aria-label="Apply for visa services with Payless card"
                   >
                     Apply Now →
@@ -242,9 +246,9 @@ const Home: React.FC = () => {
               </div>
 
               {/* Umrah Service */}
-              <div className="group relative bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="group relative bg-white/80 backdrop-blur-glass rounded-2xl shadow-glass overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-white/20">
                 <div className="absolute top-4 left-4 z-10">
-                  <span className="bg-orange-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                  <span className="bg-payless-orange text-white px-3 py-1 rounded-full text-sm font-semibold">
                     Sacred Journey
                   </span>
                 </div>
@@ -273,7 +277,7 @@ const Home: React.FC = () => {
                   </ul>
                   <Link
                     to="/reservation"
-                    className="inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold transition-colors"
+                    className="inline-flex items-center text-payless-blue hover:text-payless-navy font-semibold transition-colors"
                     aria-label="Book Umrah package with Payless card"
                   >
                     Book Package →
@@ -283,14 +287,16 @@ const Home: React.FC = () => {
             </div>
 
             {/* Call to Action */}
-            <div className="mt-16 text-center bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 text-white">
+            <div className="mt-16 text-center bg-gradient-to-r from-payless-blue to-payless-navy rounded-2xl p-8 text-white relative overflow-hidden">
+              <div className="absolute top-4 right-8 w-3 h-3 bg-payless-orange rounded-full opacity-60"></div>
+              <div className="absolute bottom-6 left-12 w-2 h-2 bg-payless-orange rounded-full opacity-80"></div>
               <h3 className="text-2xl font-bold mb-4">Ready to Start Saving on Your Next Trip?</h3>
               <p className="text-lg mb-6 leading-relaxed">
                 Join thousands of satisfied customers and get your Payless Card today for exclusive travel discounts
               </p>
               <Link
                 to="/get-your-card"
-                className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105"
+                className="bg-payless-orange hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105"
                 aria-label="Get your Payless card and start saving"
               >
                 Get Your Card Now
@@ -299,8 +305,298 @@ const Home: React.FC = () => {
           </div>
         </section>
 
+        {/* Customer Testimonials Section */}
+        <section className="py-20 bg-white" aria-labelledby="testimonials-heading">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 id="testimonials-heading" className="text-4xl font-bold text-gray-900 mb-4">
+                What Our Customers Say
+              </h2>
+              <p className="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
+                Hear from Egyptian travelers who saved significantly on their trips with Payless Card
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {/* Testimonial 1 */}
+              <div className="bg-gradient-to-br from-payless-light-blue to-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-payless-light-blue/50">
+                <div className="flex items-center mb-4">
+                  <div className="bg-payless-orange w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                    <Star className="w-6 h-6 text-white fill-current" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-gray-900">Ahmed M.</h3>
+                    <p className="text-sm text-gray-600">Cairo</p>
+                  </div>
+                </div>
+                <div className="flex mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="h-4 w-4 fill-current text-payless-orange" />
+                  ))}
+                </div>
+                <p className="text-gray-700 leading-relaxed">
+                  "I saved over 3,000 EGP on my family vacation to Hurghada! The Payless Card gave us amazing discounts on hotels and activities. Highly recommended!"
+                </p>
+              </div>
+
+              {/* Testimonial 2 */}
+              <div className="bg-gradient-to-br from-payless-light-blue to-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-payless-light-blue/50">
+                <div className="flex items-center mb-4">
+                  <div className="bg-payless-navy w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                    <MapPin className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-gray-900">Fatima S.</h3>
+                    <p className="text-sm text-gray-600">Alexandria</p>
+                  </div>
+                </div>
+                <div className="flex mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="h-4 w-4 fill-current text-payless-orange" />
+                  ))}
+                </div>
+                <p className="text-gray-700 leading-relaxed">
+                  "The visa processing service was incredibly fast and affordable. I saved both time and money for my business trip to Dubai. Excellent service!"
+                </p>
+              </div>
+
+              {/* Testimonial 3 */}
+              <div className="bg-gradient-to-br from-payless-light-blue to-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-payless-light-blue/50">
+                <div className="flex items-center mb-4">
+                  <div className="bg-payless-blue w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                    <Plane className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-gray-900">Omar K.</h3>
+                    <p className="text-sm text-gray-600">Giza</p>
+                  </div>
+                </div>
+                <div className="flex mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="h-4 w-4 fill-current text-payless-orange" />
+                  ))}
+                </div>
+                <p className="text-gray-700 leading-relaxed">
+                  "Booked flights to London with 18% discount! The customer service was outstanding and the booking process was seamless. Will definitely use again."
+                </p>
+              </div>
+
+              {/* Testimonial 4 */}
+              <div className="bg-gradient-to-br from-payless-light-blue to-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-payless-light-blue/50">
+                <div className="flex items-center mb-4">
+                  <div className="bg-payless-orange w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                    <Users className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-gray-900">Mona A.</h3>
+                    <p className="text-sm text-gray-600">Mansoura</p>
+                  </div>
+                </div>
+                <div className="flex mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="h-4 w-4 fill-current text-payless-orange" />
+                  ))}
+                </div>
+                <p className="text-gray-700 leading-relaxed">
+                  "Our Umrah package was perfectly organized and we saved 2,500 EGP compared to other providers. The spiritual journey was unforgettable!"
+                </p>
+              </div>
+
+              {/* Testimonial 5 */}
+              <div className="bg-gradient-to-br from-payless-light-blue to-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-payless-light-blue/50">
+                <div className="flex items-center mb-4">
+                  <div className="bg-payless-navy w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                    <Hotel className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-gray-900">Youssef H.</h3>
+                    <p className="text-sm text-gray-600">Aswan</p>
+                  </div>
+                </div>
+                <div className="flex mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="h-4 w-4 fill-current text-payless-orange" />
+                  ))}
+                </div>
+                <p className="text-gray-700 leading-relaxed">
+                  "Stayed at a 5-star resort in Sharm El Sheikh with 20% off! The quality was exceptional and the savings allowed us to extend our vacation."
+                </p>
+              </div>
+
+              {/* Testimonial 6 */}
+              <div className="bg-gradient-to-br from-payless-light-blue to-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-payless-light-blue/50">
+                <div className="flex items-center mb-4">
+                  <div className="bg-payless-blue w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                    <Shield className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-gray-900">Nadia T.</h3>
+                    <p className="text-sm text-gray-600">Port Said</p>
+                  </div>
+                </div>
+                <div className="flex mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="h-4 w-4 fill-current text-payless-orange" />
+                  ))}
+                </div>
+                <p className="text-gray-700 leading-relaxed">
+                  "The 24/7 customer support helped me when I needed to change my booking last minute. Professional service and great savings every time!"
+                </p>
+              </div>
+            </div>
+
+            <div className="text-center mt-12">
+              <p className="text-lg text-gray-600 mb-6">Join thousands of satisfied customers</p>
+              <Link
+                to="/get-your-card"
+                className="bg-gradient-to-r from-payless-blue to-payless-navy hover:from-payless-navy hover:to-payless-dark-navy text-white font-bold py-3 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+              >
+                Get Your Card Today
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="py-20 bg-gradient-to-br from-payless-light-blue to-blue-50" aria-labelledby="faq-heading">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 id="faq-heading" className="text-4xl font-bold text-gray-900 mb-4">
+                Frequently Asked Questions
+              </h2>
+              <p className="text-xl text-gray-600 leading-relaxed">
+                Everything you need to know about the Payless Card
+              </p>
+            </div>
+
+            <div className="space-y-6">
+              {/* FAQ Item 1 */}
+              <div className="bg-white/80 backdrop-blur-glass rounded-2xl shadow-glass p-6 border border-white/20 hover:shadow-xl transition-all duration-300">
+                <h3 className="text-lg font-bold text-payless-navy mb-3 flex items-center">
+                  <div className="w-8 h-8 bg-payless-orange rounded-full flex items-center justify-center mr-3">
+                    <span className="text-white font-bold text-sm">Q1</span>
+                  </div>
+                  What is the Payless Card?
+                </h3>
+                <p className="text-gray-700 leading-relaxed ml-11">
+                  The Payless Card is a travel discount card that helps you save money on trips, hotel bookings, and transportation services.
+                </p>
+              </div>
+
+              {/* FAQ Item 2 */}
+              <div className="bg-white/80 backdrop-blur-glass rounded-2xl shadow-glass p-6 border border-white/20 hover:shadow-xl transition-all duration-300">
+                <h3 className="text-lg font-bold text-payless-navy mb-3 flex items-center">
+                  <div className="w-8 h-8 bg-payless-blue rounded-full flex items-center justify-center mr-3">
+                    <span className="text-white font-bold text-sm">Q2</span>
+                  </div>
+                  How can I apply for a Payless Card?
+                </h3>
+                <p className="text-gray-700 leading-relaxed ml-11">
+                  You can apply directly through our website by filling in the "Get Your Card" form and following the instructions.
+                </p>
+              </div>
+
+              {/* FAQ Item 3 */}
+              <div className="bg-white/80 backdrop-blur-glass rounded-2xl shadow-glass p-6 border border-white/20 hover:shadow-xl transition-all duration-300">
+                <h3 className="text-lg font-bold text-payless-navy mb-3 flex items-center">
+                  <div className="w-8 h-8 bg-payless-orange rounded-full flex items-center justify-center mr-3">
+                    <span className="text-white font-bold text-sm">Q3</span>
+                  </div>
+                  How does the Payless Card save me money?
+                </h3>
+                <p className="text-gray-700 leading-relaxed ml-11">
+                  We have partnerships with trusted travel and service providers, offering exclusive discounts that you can access with your Payless Card.
+                </p>
+              </div>
+
+              {/* FAQ Item 4 */}
+              <div className="bg-white/80 backdrop-blur-glass rounded-2xl shadow-glass p-6 border border-white/20 hover:shadow-xl transition-all duration-300">
+                <h3 className="text-lg font-bold text-payless-navy mb-3 flex items-center">
+                  <div className="w-8 h-8 bg-payless-blue rounded-full flex items-center justify-center mr-3">
+                    <span className="text-white font-bold text-sm">Q4</span>
+                  </div>
+                  Is the Payless Card free?
+                </h3>
+                <p className="text-gray-700 leading-relaxed ml-11">
+                  No, there is a one-time payment or subscription fee depending on the plan you choose.
+                </p>
+              </div>
+
+              {/* FAQ Item 5 */}
+              <div className="bg-white/80 backdrop-blur-glass rounded-2xl shadow-glass p-6 border border-white/20 hover:shadow-xl transition-all duration-300">
+                <h3 className="text-lg font-bold text-payless-navy mb-3 flex items-center">
+                  <div className="w-8 h-8 bg-payless-orange rounded-full flex items-center justify-center mr-3">
+                    <span className="text-white font-bold text-sm">Q5</span>
+                  </div>
+                  How long is my Payless Card valid?
+                </h3>
+                <p className="text-gray-700 leading-relaxed ml-11">
+                  Your card is valid for one year from the date of activation.
+                </p>
+              </div>
+
+              {/* FAQ Item 6 */}
+              <div className="bg-white/80 backdrop-blur-glass rounded-2xl shadow-glass p-6 border border-white/20 hover:shadow-xl transition-all duration-300">
+                <h3 className="text-lg font-bold text-payless-navy mb-3 flex items-center">
+                  <div className="w-8 h-8 bg-payless-blue rounded-full flex items-center justify-center mr-3">
+                    <span className="text-white font-bold text-sm">Q6</span>
+                  </div>
+                  Can I use the Payless Card internationally?
+                </h3>
+                <p className="text-gray-700 leading-relaxed ml-11">
+                  Yes! Our discounts and offers are available for both domestic and international travel.
+                </p>
+              </div>
+
+              {/* FAQ Item 7 */}
+              <div className="bg-white/80 backdrop-blur-glass rounded-2xl shadow-glass p-6 border border-white/20 hover:shadow-xl transition-all duration-300">
+                <h3 className="text-lg font-bold text-payless-navy mb-3 flex items-center">
+                  <div className="w-8 h-8 bg-payless-orange rounded-full flex items-center justify-center mr-3">
+                    <span className="text-white font-bold text-sm">Q7</span>
+                  </div>
+                  What should I do if I lose my Payless Card?
+                </h3>
+                <p className="text-gray-700 leading-relaxed ml-11">
+                  Contact our support team immediately to block the lost card and request a replacement.
+                </p>
+              </div>
+
+              {/* FAQ Item 8 */}
+              <div className="bg-white/80 backdrop-blur-glass rounded-2xl shadow-glass p-6 border border-white/20 hover:shadow-xl transition-all duration-300">
+                <h3 className="text-lg font-bold text-payless-navy mb-3 flex items-center">
+                  <div className="w-8 h-8 bg-payless-blue rounded-full flex items-center justify-center mr-3">
+                    <span className="text-white font-bold text-sm">Q8</span>
+                  </div>
+                  How can I check the latest offers and discounts?
+                </h3>
+                <p className="text-gray-700 leading-relaxed ml-11">
+                  Log in to your account on our website or subscribe to our newsletter to receive updates.
+                </p>
+              </div>
+            </div>
+
+            <div className="text-center mt-12">
+              <p className="text-lg text-gray-600 mb-6">Still have questions?</p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <a
+                  href="tel:+201044503305"
+                  className="bg-payless-orange hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-full transition-all duration-300 transform hover:scale-105"
+                >
+                  Call Us: 010 44503305
+                </a>
+                <a
+                  href="mailto:info@paylesscard.com"
+                  className="bg-payless-blue hover:bg-payless-navy text-white font-bold py-3 px-6 rounded-full transition-all duration-300 transform hover:scale-105"
+                >
+                  Email Support
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Why Choose Payless Section */}
-        <section className="py-20 bg-white" aria-labelledby="why-choose-heading">
+        <section id="about" className="py-20 bg-white" aria-labelledby="why-choose-heading">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 id="why-choose-heading" className="text-4xl font-bold text-gray-900 mb-4">
@@ -313,8 +609,8 @@ const Home: React.FC = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="text-center p-6">
-                <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Star className="w-8 h-8 text-blue-600" aria-hidden="true" />
+                <div className="bg-payless-light-blue w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Star className="w-8 h-8 text-payless-blue" aria-hidden="true" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">Guaranteed Savings</h3>
                 <p className="text-gray-600 leading-relaxed">
@@ -323,8 +619,8 @@ const Home: React.FC = () => {
               </div>
 
               <div className="text-center p-6">
-                <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Users className="w-8 h-8 text-green-600" aria-hidden="true" />
+                <div className="bg-payless-orange-light w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Users className="w-8 h-8 text-payless-orange" aria-hidden="true" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">Trusted by Thousands</h3>
                 <p className="text-gray-600 leading-relaxed">
@@ -333,8 +629,8 @@ const Home: React.FC = () => {
               </div>
 
               <div className="text-center p-6">
-                <div className="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Shield className="w-8 h-8 text-purple-600" aria-hidden="true" />
+                <div className="bg-payless-light-blue w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Shield className="w-8 h-8 text-payless-navy" aria-hidden="true" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">Secure & Reliable</h3>
                 <p className="text-gray-600 leading-relaxed">
@@ -343,8 +639,8 @@ const Home: React.FC = () => {
               </div>
 
               <div className="text-center p-6">
-                <div className="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Clock className="w-8 h-8 text-orange-600" aria-hidden="true" />
+                <div className="bg-payless-orange-light w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Clock className="w-8 h-8 text-payless-orange" aria-hidden="true" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">24/7 Support</h3>
                 <p className="text-gray-600 leading-relaxed">
@@ -353,8 +649,8 @@ const Home: React.FC = () => {
               </div>
 
               <div className="text-center p-6">
-                <div className="bg-red-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <MapPin className="w-8 h-8 text-red-600" aria-hidden="true" />
+                <div className="bg-payless-light-blue w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <MapPin className="w-8 h-8 text-payless-blue" aria-hidden="true" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">Wide Network</h3>
                 <p className="text-gray-600 leading-relaxed">
@@ -363,8 +659,8 @@ const Home: React.FC = () => {
               </div>
 
               <div className="text-center p-6">
-                <div className="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <FileText className="w-8 h-8 text-indigo-600" aria-hidden="true" />
+                <div className="bg-payless-orange-light w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <FileText className="w-8 h-8 text-payless-orange" aria-hidden="true" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">Easy Booking</h3>
                 <p className="text-gray-600 leading-relaxed">
@@ -376,7 +672,7 @@ const Home: React.FC = () => {
         </section>
 
         {/* Payless Card Display */}
-        <section className="py-20 bg-gradient-to-br from-blue-50 to-indigo-100" aria-labelledby="card-display-heading">
+        <section id="vouchers" className="py-20 bg-gradient-to-br from-payless-light-blue to-blue-50" aria-labelledby="card-display-heading">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 id="card-display-heading" className="text-4xl font-bold text-gray-900 mb-4">
@@ -392,7 +688,7 @@ const Home: React.FC = () => {
             <div className="text-center mt-12">
               <Link
                 to="/get-your-card"
-                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+                className="bg-gradient-to-r from-payless-blue to-payless-navy hover:from-payless-navy hover:to-payless-dark-navy text-white font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
                 aria-label="Apply for your Payless discount card today"
               >
                 Get Your Card Today
